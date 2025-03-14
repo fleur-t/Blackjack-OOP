@@ -28,12 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            btnClickHere = new Button();
+            lbl = new Label();
+            SuspendLayout();
+            // 
+            // btnClickHere
+            // 
+            btnClickHere.Location = new Point(329, 165);
+            btnClickHere.Name = "btnClickHere";
+            btnClickHere.Size = new Size(145, 65);
+            btnClickHere.TabIndex = 0;
+            btnClickHere.Text = "Start";
+            btnClickHere.UseVisualStyleBackColor = true;
+            btnClickHere.Click += button1_Click;
+            // 
+            // lbl
+            // 
+            lbl.AutoSize = true;
+            lbl.Location = new Point(377, 254);
+            lbl.Name = "lbl";
+            lbl.Size = new Size(0, 20);
+            lbl.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(849, 483);
+            Controls.Add(lbl);
+            Controls.Add(btnClickHere);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button btnClickHere;
+        private Label lbl;
     }
 }
