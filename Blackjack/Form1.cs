@@ -10,7 +10,7 @@ namespace Blackjack
 
         private void button1_Click(object sender, EventArgs e)
         {
-            lbl.Text = "Hello world";
+            lbl.Text = "Hello";
         }
 
         private void lbl_Click(object sender, EventArgs e)
