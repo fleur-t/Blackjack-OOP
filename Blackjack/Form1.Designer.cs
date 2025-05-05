@@ -31,8 +31,10 @@
             lbl = new Label();
             DeelKaart = new Button();
             Player = new ListBox();
-            scoreTotaal = new Label();
             buttonReset = new Button();
+            Player2 = new ListBox();
+            scoreTotaal = new Label();
+            scoreTotaal2 = new Label();
             SuspendLayout();
             // 
             // lbl
@@ -63,16 +65,6 @@
             Player.TabIndex = 3;
             Player.SelectedIndexChanged += Player_SelectedIndexChanged;
             // 
-            // scoreTotaal
-            // 
-            scoreTotaal.AutoSize = true;
-            scoreTotaal.Location = new Point(58, 306);
-            scoreTotaal.Name = "scoreTotaal";
-            scoreTotaal.Size = new Size(53, 20);
-            scoreTotaal.TabIndex = 4;
-            scoreTotaal.Text = "Score: ";
-            scoreTotaal.Click += scoreTotaal_Click;
-            // 
             // buttonReset
             // 
             buttonReset.Location = new Point(191, 377);
@@ -83,11 +75,43 @@
             buttonReset.UseVisualStyleBackColor = true;
             buttonReset.Click += buttonReset_Click;
             // 
+            // Player2
+            // 
+            Player2.BackColor = Color.White;
+            Player2.FormattingEnabled = true;
+            Player2.Location = new Point(266, 38);
+            Player2.Name = "Player2";
+            Player2.Size = new Size(150, 264);
+            Player2.TabIndex = 6;
+            Player2.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            // 
+            // scoreTotaal
+            // 
+            scoreTotaal.AutoSize = true;
+            scoreTotaal.Location = new Point(58, 305);
+            scoreTotaal.Name = "scoreTotaal";
+            scoreTotaal.Size = new Size(53, 20);
+            scoreTotaal.TabIndex = 4;
+            scoreTotaal.Text = "Score: ";
+            scoreTotaal.Click += scoreTotaal_Click;
+            // 
+            // scoreTotaal2
+            // 
+            scoreTotaal2.AutoSize = true;
+            scoreTotaal2.Location = new Point(266, 305);
+            scoreTotaal2.Name = "scoreTotaal2";
+            scoreTotaal2.Size = new Size(53, 20);
+            scoreTotaal2.TabIndex = 7;
+            scoreTotaal2.Text = "Score: ";
+            scoreTotaal2.Click += scoreTotaal2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(849, 458);
+            Controls.Add(scoreTotaal2);
+            Controls.Add(Player2);
             Controls.Add(buttonReset);
             Controls.Add(scoreTotaal);
             Controls.Add(Player);
@@ -104,7 +128,9 @@
         private Label lbl;
         private Button DeelKaart;
         private ListBox Player;
-        private Label scoreTotaal;
         private Button buttonReset;
+        private ListBox Player2;
+        private Label scoreTotaal;
+        private Label scoreTotaal2;
     }
 }
